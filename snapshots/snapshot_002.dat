@@ -1,0 +1,15 @@
+# CPU-DS memory snapshot
+# format: MEM <address> <value> (non-zero cells only); registers included
+PROGRAM subtraction.asm
+REG R0 0
+REG R1 30
+REG R2 20
+REG R3 0
+REG R4 0
+REG R5 0
+REG R6 0
+REG R7 0
+PC 3
+SP 1000
+FLAGS 0 0 0 0
+END
