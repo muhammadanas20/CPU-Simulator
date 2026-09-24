@@ -1,0 +1,6 @@
+/build/
+/bin/
+*.o
+cpu_ds
+cpu_ds_tests
+tests/tmp/
