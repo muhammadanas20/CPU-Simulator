@@ -1,0 +1,17 @@
+EXECUTION HISTORY  addition.asm  (2026-09-24 15:35:32)
+Step 1 | PC=0 | MOV R1, 10
+  before: R0=0 R1=0 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=0 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=10 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=1 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: R1 = 10
+Step 2 | PC=1 | MOV R2, 20
+  before: R0=0 R1=10 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=1 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=10 R2=20 R3=0 R4=0 R5=0 R6=0 R7=0 PC=2 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: R2 = 20
+Step 3 | PC=2 | ADD R1, R2
+  before: R0=0 R1=10 R2=20 R3=0 R4=0 R5=0 R6=0 R7=0 PC=2 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=30 R2=20 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: R1 = 10 + 20 = 30
+Step 4 | PC=3 | HALT
+  before: R0=0 R1=30 R2=20 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=30 R2=20 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: program halted

@@ -1,0 +1,21 @@
+# CPU-DS memory snapshot
+# format: MEM <address> <value> (non-zero cells only); registers included
+PROGRAM array_sum.asm
+REG R0 0
+REG R1 50
+REG R2 205
+REG R3 0
+REG R4 150
+REG R5 50
+REG R6 0
+REG R7 0
+PC 19
+SP 1000
+FLAGS 1 0 0 0
+MEM 200 10
+MEM 201 20
+MEM 202 30
+MEM 203 40
+MEM 204 50
+MEM 300 150
+END

@@ -1,0 +1,16 @@
+# CPU-DS memory snapshot
+# format: MEM <address> <value> (non-zero cells only); registers included
+PROGRAM demo.asm
+REG R0 0
+REG R1 4
+REG R2 4
+REG R3 4
+REG R4 0
+REG R5 0
+REG R6 0
+REG R7 4
+PC 14
+SP 1000
+FLAGS 1 0 0 0
+MEM 50 4
+END
