@@ -1,0 +1,9 @@
+id,name,path,instructions,executions,size,status,last_execution
+1,addition.asm,./programs/addition.asm,4,1,91,OK,2026-09-24 15:35:32
+2,subtraction.asm,./programs/subtraction.asm,4,1,76,OK,2026-09-24 15:35:32
+3,stack_demo.asm,./programs/stack_demo.asm,6,1,127,OK,2026-09-24 15:35:32
+4,loop.asm,./programs/loop.asm,5,1,151,OK,2026-09-24 15:35:32
+5,factorial.asm,./programs/factorial.asm,14,1,492,OK,2026-09-24 15:35:32
+6,array_sum.asm,./programs/array_sum.asm,20,1,421,OK,2026-09-24 15:35:32
+7,demo.asm,./programs/demo.asm,15,1,431,OK,2026-09-24 15:35:32
+8,errors_demo.asm,./programs/errors_demo.asm,0,0,131,ERRORS,never
