@@ -1,0 +1,69 @@
+EXECUTION HISTORY  loop.asm  (2026-09-24 15:35:32)
+Step 1 | PC=0 | MOV R1, 5
+  before: R0=0 R1=0 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=0 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=5 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=1 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: R1 = 5
+Step 2 | PC=1 | DEC R1
+  before: R0=0 R1=5 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=1 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=4 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=2 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: R1 = 4
+Step 3 | PC=2 | CMP R1, R0
+  before: R0=0 R1=4 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=2 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=4 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: compare 4 with 0 -> ZF=0 SF=0
+Step 4 | PC=3 | JNZ LOOP
+  before: R0=0 R1=4 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=4 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=1 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: ZF=0, jump taken to LOOP (1)
+Step 5 | PC=1 | DEC R1
+  before: R0=0 R1=4 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=1 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=3 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=2 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: R1 = 3
+Step 6 | PC=2 | CMP R1, R0
+  before: R0=0 R1=3 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=2 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=3 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: compare 3 with 0 -> ZF=0 SF=0
+Step 7 | PC=3 | JNZ LOOP
+  before: R0=0 R1=3 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=3 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=1 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: ZF=0, jump taken to LOOP (1)
+Step 8 | PC=1 | DEC R1
+  before: R0=0 R1=3 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=1 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=2 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=2 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: R1 = 2
+Step 9 | PC=2 | CMP R1, R0
+  before: R0=0 R1=2 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=2 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=2 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: compare 2 with 0 -> ZF=0 SF=0
+Step 10 | PC=3 | JNZ LOOP
+  before: R0=0 R1=2 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=2 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=1 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: ZF=0, jump taken to LOOP (1)
+Step 11 | PC=1 | DEC R1
+  before: R0=0 R1=2 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=1 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=1 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=2 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: R1 = 1
+Step 12 | PC=2 | CMP R1, R0
+  before: R0=0 R1=1 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=2 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=1 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: compare 1 with 0 -> ZF=0 SF=0
+Step 13 | PC=3 | JNZ LOOP
+  before: R0=0 R1=1 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=1 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=1 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  result: ZF=0, jump taken to LOOP (1)
+Step 14 | PC=1 | DEC R1
+  before: R0=0 R1=1 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=1 SP=1000 ZF=0 SF=0 CF=0 OF=0
+  after : R0=0 R1=0 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=2 SP=1000 ZF=1 SF=0 CF=0 OF=0
+  result: R1 = 0
+Step 15 | PC=2 | CMP R1, R0
+  before: R0=0 R1=0 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=2 SP=1000 ZF=1 SF=0 CF=0 OF=0
+  after : R0=0 R1=0 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=1 SF=0 CF=0 OF=0
+  result: compare 0 with 0 -> ZF=1 SF=0
+Step 16 | PC=3 | JNZ LOOP
+  before: R0=0 R1=0 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=3 SP=1000 ZF=1 SF=0 CF=0 OF=0
+  after : R0=0 R1=0 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=4 SP=1000 ZF=1 SF=0 CF=0 OF=0
+  result: ZF=1, jump not taken
+Step 17 | PC=4 | HALT
+  before: R0=0 R1=0 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=4 SP=1000 ZF=1 SF=0 CF=0 OF=0
+  after : R0=0 R1=0 R2=0 R3=0 R4=0 R5=0 R6=0 R7=0 PC=4 SP=1000 ZF=1 SF=0 CF=0 OF=0
+  result: program halted
